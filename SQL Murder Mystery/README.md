@@ -4,5 +4,5 @@
 ##There's been a Murder in SQL City! 
 
 
-  The (SQL Murder Mystery)[https://mystery.knightlab.com/]. is designed to be both a self-directed lesson to learn SQL concepts and commands and 
+  The (SQL Murder Mystery)[https://mystery.knightlab.com] is designed to be both a self-directed lesson to learn SQL concepts and commands and 
   a fun game for experienced SQL users to solve an intriguing crime.
