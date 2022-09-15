@@ -38,9 +38,9 @@
     ON person.id = interview.person_id
     WHERE person.id = 14887 OR person.id = 16371;
 
---Findings from Annabel's interview show that the murder happened on the 9th of January
---From Morty's interview we gathered that the membership number on the bag of the suspect started with "48Z", and the got into a car with a plate that included "H42W"
---Morty mentioned a man, so we know our suspect is male and we have partial carplate characters.
+/* Findings from Annabel's interview show that the murder happened on the 9th of January
+   From Morty's interview we gathered that the membership number on the bag of the suspect started with "48Z", and the got into a car with a plate that included "H42W"
+   Morty mentioned a man, so we know our suspect is male and we have partial carplate characters. */
 
     SELECT *
     FROM get_fit_now_check_in 
@@ -87,7 +87,7 @@
         OR person.license_id = 918773
 
   /* and Voila! We found our villain, Miranda Priestly with an annual income of 310000, which is incredibly high, and she also attended the concert three times in December 2017.
-  What was her motive though? Let us confirm with the other sleuths of our findings.
+  What was her motive though? Let us confirm with the other sleuths of our findings.*/
   
       INSERT INTO solution VALUES (1, 'Miranda Priestly');
             SELECT value FROM solution;
