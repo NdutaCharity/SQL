@@ -56,7 +56,7 @@
         AND get_fit_now_check_in.check_in_date = "20180109";
 
  --Our findings are leading us to Jeremy Bowers, well...oh well. What did he say on the interview?
-     SELECT person.name,
+    SELECT person.name,
          interview.person_id,
          interview.transcript
     FROM person JOIN interview ON person.id = interview.person_id
@@ -66,10 +66,10 @@
    Our guy is just a hit man hired by a wealthy red haired lady whose height is between  5'5" and  5'7" and who drives a Tesla Model S.
    Our mystery lady is a symphony lover who  attended the SQL Symphony Concert 3 times in December 2017. Let's dig! */
    
-     select * 
-      from drivers_license 
-      join person on drivers_license.id = person.license_id
-      where car_make = 'Tesla' and car_model = 'Model S' and gender = 'female' and hair_color = 'red'
+     SELECT * 
+     FROM  drivers_license 
+     JOIN person ON drivers_license.id = person.license_id
+     WHERE car_make = 'Tesla' AND car_model = 'Model S' AND gender = 'female' AND hair_color = 'red'
 
   /* We have 3 possible suspects with ID numbers are 202298, 291182, and 918773. Using ID to find their attendance at the SQL Symphony Concert in December 2017.
      We need to narrow down our search, we know her income range and her frequency to the concert.*/
