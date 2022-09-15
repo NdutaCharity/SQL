@@ -1,9 +1,10 @@
 -- where to start with a lost crime scene report.
 
- ``` SELECT * FROM crime_scene_report 
-       WHERE date = 20180115 
+   SELECT * 
+   FROM crime_scene_report 
+   WHERE date = 20180115 
        AND type = "murder" 
-       AND city = "SQL City" ```
+       AND city = "SQL City"
 
 -- Two witnesses identified.
 -- W1: lives in the last house on the street "Northwestern Dr"
