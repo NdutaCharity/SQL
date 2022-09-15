@@ -1,17 +1,17 @@
 -- where to start with a lost crime scene report.
 
-            SELECT * FROM crime_scene_report 
-            WHERE date = 20180115 
-            AND type = "murder" 
-            AND city = "SQL City" 
+ ```   SELECT * FROM crime_scene_report 
+       WHERE date = 20180115 
+       AND type = "murder" 
+       AND city = "SQL City" ```
 
 -- Two witnesses identified.
 -- W1: lives in the last house on the street "Northwestern Dr"
 
-            SELECT *
-            FROM person
-            WHERE address_street_name = "Northwestern Dr"
-            ORDER BY address_number DESC LIMIT 1;
+      SELECT *
+      FROM person
+      WHERE address_street_name = "Northwestern Dr"
+      ORDER BY address_number DESC LIMIT 1;
 
 --Morty Schapiro is the first witness! Using his ID number, 14887, we pull a transcript of his interview.
 
